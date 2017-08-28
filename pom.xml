@@ -42,9 +42,9 @@
     </developers>
 
     <scm>
-        <connection>scm:git:git@github.com:edvin/fxlauncher.git</connection>
-        <developerConnection>scm:git:git@github.com:edvin/fxlauncher.git</developerConnection>
-        <url>git@github.com:edvin/fxlauncher.git</url>
+        <connection>scm:git:git@github.com/jricardo17/fxlauncher.git</connection>
+        <developerConnection>scm:git:git@github.com/jricardo17/fxlauncher.git</developerConnection>
+        <url>git@github.com/jricardo17/fxlauncher.git</url>
     </scm>
 
     <build>
