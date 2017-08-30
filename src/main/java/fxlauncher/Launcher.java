@@ -16,6 +16,7 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Alert;
 import javafx.scene.control.DialogPane;
+import javafx.scene.image.Image;
 import javafx.scene.layout.StackPane;
 import javafx.scene.web.WebView;
 import javafx.stage.Stage;
@@ -74,6 +75,13 @@ public class Launcher extends Application {
                 if (url != null) {
                     DialogPane dialogPane = alert.getDialogPane();
                     dialogPane.getStylesheets().add(url.toExternalForm());
+                }
+
+                InputStream iconInputStream = this.getClass().getResourceAsStream("/images/icon.png");
+
+                if (iconInputStream != null) {
+                    Stage stage = (Stage) alert.getDialogPane().getScene().getWindow();
+                    stage.getIcons().add(new Image(iconInputStream));
                 }
 
                 InputStream messageStream = this.getClass().getResourceAsStream("/properties/error-message.properties");
